@@ -17,6 +17,7 @@ const userdata = document.getElementById('userdata');
         userdata.value = '';
         qrcodeImage.src = '';
         qrcodeImage.style.display = 'none';
+        downloadText.style.display = 'none';
     }
 
     const wifiSsid = document.getElementById('wifi-ssid');
@@ -47,6 +48,7 @@ const userdata = document.getElementById('userdata');
         wifiEncryption.value = 'WPA';
         wifiQrcodeImage.src = '';
         wifiQrcodeImage.style.display = 'none';
+        downloadWifi.style.display = 'none';
     }
 
     const hidePassword = document.getElementById('wifi-password');
@@ -60,4 +62,5 @@ const userdata = document.getElementById('userdata');
         hidePassword.type = 'password';
         toggleWifiPassword.src = 'Hide-eye.png';
     }
+
 }
