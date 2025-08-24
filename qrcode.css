@@ -1,0 +1,162 @@
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0eafc 0%, #f3cfee 100%);
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            max-width: 400px;
+            width: 100%;
+            margin-right: 60px;
+        }
+        .right-panel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 800px;
+            height: 100%;
+        }
+        .right-panel h1 {
+            font-size: 6rem;
+            color: #b021a2;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #ed6dda, #2193b0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        #text-section, #wifi-section {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 24px 32px;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            max-width: 350px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        #userdata {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #deb0d9;
+            font-size: 16px;
+        }
+        #generate {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background: #ed6dda;
+            color: #fff;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        #generate:hover {
+            background: #b021a2;
+        }
+        #reset-text {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background: #ed6dda;
+            color: #fff;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        #reset-text:hover {
+            background: #b021a2;
+        }
+        #qrcode {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        #qrcode img {
+            max-width: 200px;
+            height: auto;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            border-radius: 12px;
+            background: #fff;
+            padding: 12px;
+        }
+        #wifi-section input, #wifi-section select {
+            width: 100%;
+            padding: 8px 8px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            border: 1px solid #deb0d9;
+        }
+        .password-container {
+            display: flex;
+            align-items: center;
+        }
+        .password-container img {
+            width: 24px;
+            height: 24px;
+            margin-left: -36px;
+            cursor: pointer;
+        }
+        #wifi-section button {
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background: #ed6dda;
+            color: #fff;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        #wifi-section button:hover {
+            background: #b021a2;
+        }
+        #wifi-section #reset-wifi {
+            margin-top: 10px;
+            background: #ed6dda;
+            color: #fff;
+        }
+        #wifi-section #reset-wifi:hover {
+            background: #b021a2;
+        }
+        #wifi-qrcode {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        #wifi-qrcode img {
+            max-width: 200px;
+            height: auto;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            border-radius: 12px;
+            background: #fff;
+            padding: 12px;
+        }
+        footer hr {
+            border: none;
+            height: 4px;
+            width: 350px;
+            background: #ed6dda;
+            margin: auto;
+            margin-bottom: 10px;
+            border-radius: 25px;
+        }

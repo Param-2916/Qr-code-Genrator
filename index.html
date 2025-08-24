@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code Generator</title>
+    <link rel="stylesheet" href="qrcode.css">
+</head>
+<body>
+    <!-- <h1>QR Code Generator</h1>
+    <p>Generate QR codes for text and WiFi credentials.</p> -->
+    <div class="container">
+        <div class="left-panel">
+            <div id="text-section">
+                <h2 style="margin-bottom:16px;">QR Code Generator</h2>
+                <input type="text" id="userdata" placeholder="Enter text to generate QR code">
+                <button id="generate" onclick="generateQRCode()">Generate QR Code</button>
+                <button id="reset-text" onclick="resetTextQRCode()" style="margin-left:10px;">Reset</button>
+
+                <div id="qrcode">
+                    <img id="qrcodeImage" src="" alt="QR Code will appear here" style="display: none;">
+                    <p id="download-text" style="display: none;">To Download Right click on qr code and select save as</p>
+                </div>
+            </div>
+            <div id="wifi-section">
+                <h2 style="margin-bottom:16px;">WiFi QR Code Generator</h2>
+                <input type="text" id="wifi-ssid" placeholder="WiFi SSID">
+                <div class="password-container">
+                <input type="password" id="wifi-password" placeholder="WiFi Password" >
+                <img src="Hide-eye.png" onclick="hide()" id="eye-icon" >
+                </div>
+                <select id="wifi-encryption">
+                    <option value="WPA">WPA/WPA2</option>
+                    <option value="WEP">WEP</option>
+                    <option value="nopass">None</option>
+                </select>
+                <button id="generate-wifi" onclick="generateWifiQRCode()" >Generate WiFi QR Code</button>
+                <button id="reset-wifi" onclick="resetWifiQRCode()">Reset</button>
+
+                <div id="wifi-qrcode">
+                    <img id="wifiQrcodeImage" src="" alt="WiFi QR Code will appear here" style="display: none;">
+                    <p id="download-text-wifi"style="display: none;" >To Download Right click on qr code and select save as</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h1>Create your own QR Code</h1>
+        </div>
+    </div>
+    <footer style="text-align:center; margin-top:40px;">
+        <hr>
+        &copy; 2025 Parampreet Singh. All rights reserved.
+    </footer>
+    <script src="qrcode.js"></script>
+</body>
+</html>
