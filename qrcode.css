@@ -37,6 +37,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+         #mobile-head {
+            display: none;
+        }
         #text-section, #wifi-section {
             background: rgba(255, 255, 255, 0.7);
             padding: 24px 32px;
@@ -182,6 +185,19 @@
     .right-panel {
         display: none;
     }
+         #mobile-head {
+        display: block;
+        text-align: center;
+        margin: 20px 0 10px 0;
+        font-size: 1.5rem;
+        color: #b021a2;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background: linear-gradient(90deg, #ed6dda, #2193b0);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     #text-section, #wifi-section {
         max-width: 98vw;
         width: 98vw;
@@ -205,3 +221,4 @@
         width: 90vw;
     }
 }
+
