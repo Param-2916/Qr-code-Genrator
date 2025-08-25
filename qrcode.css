@@ -6,7 +6,6 @@
         }
         .container {
             display: flex;
-            min-height: 100vh;
             align-items: center;
             justify-content: center;
         }
@@ -169,7 +168,7 @@
             border-radius: 25px;
         }
         /* Responsive styles for mobile */
-        @media (max-width: 700px) {
+        @media (max-width: 800px) {
                  .container {
                 min-height: 0;
             }
@@ -222,3 +221,4 @@
     }
 
 }
+
